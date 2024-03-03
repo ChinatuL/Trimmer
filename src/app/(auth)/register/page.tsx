@@ -1,12 +1,13 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import FormTitle from "@auth/form-title";
 import AuthForm from "@auth/form";
 import FormRow from "@auth/form-row";
 import SubmitButton from "@auth/submit-button";
 import GoogleButton from "@auth/google-button";
-import formBg from "@public/bg-auth.png";
-import Image from "next/image";
+import registerBg from "@images/bg-register.png";
+import googleIcon from "@icons/google.svg";
 
 export default function Register() {
     function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -14,19 +15,17 @@ export default function Register() {
     }
 
     return (
-        <div className='flex justify-center items-center w-[80%] mx-auto'>
-            {/* Image component */}
-            <div className=' w-[50%]'>
-                <Image src={formBg} alt='' />
+        <div className='flex justify-center items-center w-[80%] max-w-[66rem] mx-auto font-normal'>
+            <div className=' w-[50%] h-full relative'>
+                <Image src={registerBg} alt='' fill />
             </div>
-            {/* Form component */}
-            <div className=' w-[50%] bg-[#0B0A1E] py-10 px-14 text-zinc-50'>
+            <div className=' w-[50%] bg-[#0B0A1E] py-10 px-14 text-zinc-50 rounded-r-lg'>
                 <FormTitle
                     title='Let’s Get Started'
-                    desc='Enter Your Details Below To Register'
+                    desc='Enter your details below to register'
                 />
                 <AuthForm handleSubmit={handleSubmit}>
-                    <div className='grid gap-6 mt-4 w-full'>
+                    <div className='grid gap-6 pt-4 w-full'>
                         <FormRow
                             labelText='full name'
                             type='text'
@@ -46,14 +45,22 @@ export default function Register() {
                             placeholder='Password'
                         />
                         {/* error messages */}
-                        <p></p>
                     </div>
-                    <div className='grid gap-4 text-center'>
+                    <p className='text-[0.75rem] pt-1'></p>
+                    <div className='grid gap-4 text-center pt-4'>
                         <SubmitButton text='Sign Up' />
-                        <GoogleButton>Sign Up with Google</GoogleButton>
-                        <p className='font-semibold'>
+                        <GoogleButton>
+                            <span>
+                                <Image src={googleIcon} alt='' />
+                            </span>
+                            <span> Sign Up with Google</span>
+                        </GoogleButton>
+                        <p>
                             Already have an account?{" "}
-                            <Link href='/login' className='text-purple'>
+                            <Link
+                                href='/login'
+                                className='text-purple font-semibold hover:underline'
+                            >
                                 Sign in
                             </Link>
                         </p>
@@ -61,18 +68,21 @@ export default function Register() {
                             By signing up, you agree to our{" "}
                             <Link
                                 href='/terms-of-service'
-                                className='text-purple'
+                                className='text-purple hover:underline'
                             >
                                 Terms of Service
                             </Link>
                             ,{" "}
-                            <Link href='privacy-policy' className='text-purple'>
+                            <Link
+                                href='privacy-policy'
+                                className='text-purple hover:underline'
+                            >
                                 Privacy Policy
                             </Link>{" "}
                             and{" "}
                             <Link
                                 href='acceptable-use-policy'
-                                className='text-purple'
+                                className='text-purple hover:underline'
                             >
                                 Acceptable Use Policy
                             </Link>

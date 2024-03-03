@@ -21,6 +21,8 @@
             "@/*": ["./src/*"],
             "@auth/*": ["./src/app/ui/auth/*"],
             "@public/*": ["./public/*"],
+            "@images/*": ["./public/images/*"],
+            "@icons/*" : ["./public/icons/*"]
         }
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

@@ -9,7 +9,7 @@ const config: Config = {
     theme: {
         extend: {
             backgroundImage: {
-                "auth-bg": "url('/bg-auth.png')",
+                "auth-bg": "url('/images/bg-auth.png')",
             },
             colors: {
                 purple: "#9D37ED",
