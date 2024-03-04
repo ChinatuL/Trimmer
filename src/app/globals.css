@@ -42,5 +42,14 @@ input:-webkit-autofill:focus {
 
     input:checked + .custom-checkboxafter {
         opacity: 1;
+        color: #3f066ce6;
+    }
+
+    .transitionEase{
+        transition: all 0.3s ease;
+    }
+
+    .link-hover {
+      color: #9D37ED;
     }
 }

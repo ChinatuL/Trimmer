@@ -19,7 +19,9 @@
         ],
         "paths": {
             "@/*": ["./src/*"],
+            "@ui/*": ["./src/app/ui/*"],
             "@auth/*": ["./src/app/ui/auth/*"],
+            "@dashboard/*": ["./src/app/ui/dashboard/*"],
             "@public/*": ["./public/*"],
             "@images/*": ["./public/images/*"],
             "@icons/*" : ["./public/icons/*"]
