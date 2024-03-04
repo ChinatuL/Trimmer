@@ -6,6 +6,7 @@ export default function TrimmerLogo() {
       <Image
         src={logo}
         alt="Trimmer logo"
+        priority
       />
     </div>
   )
