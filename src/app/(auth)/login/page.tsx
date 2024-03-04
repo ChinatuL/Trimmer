@@ -15,11 +15,11 @@ export default function Register() {
     }
 
     return (
-        <div className='flex justify-center items-center w-[80%] max-w-[66rem] mx-auto font-normal'>
+        <div className='flex justify-center items-center w-[80%] max-w-[66rem] mx-auto font-normal min-h-[95vh]'>
             <div className=' w-[50%] h-full relative'>
                 <Image src={registerBg} alt='' fill />
             </div>
-            <div className=' w-[50%] bg-[#0B0A1E] py-12 px-14 text-zinc-50 rounded-r-lg'>
+            <div className=' w-[50%] h-full bg-[#0B0A1E] py-12 px-14 text-zinc-50 rounded-r-lg'>
                 <FormTitle
                     title='Welcome Back!'
                     desc='Enter your details below to sign in'
