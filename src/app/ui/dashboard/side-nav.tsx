@@ -4,7 +4,7 @@ import NavLinks from "@dashboard/nav-links";
 
 export default function SideNav() {
     return (
-        <div className='h-full border-r-2 border-r-purple rounded-xl px-8 pt-4 bg-gradient-to-b from-[#0B0A1E] from-40% to-[rgb(29,1,56)] to-100% drop-shadow-[0px_4px_4px_0_rgba(0,0,0,0.25)]'>
+        <div className='h-full border-r-2 border-r-purple rounded-xl px-8 pt-4 bg-gradient-to-b from-darkBlue from-40% to-darkPurple to-100%'>
             <nav className='flex flex-col gap-8'>
                 <div>
                     <Link href='/'>

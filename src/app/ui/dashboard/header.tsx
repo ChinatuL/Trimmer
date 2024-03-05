@@ -19,7 +19,7 @@ export default function DashboardHeader() {
     const headingText = getHeadingFromPath();
 
     return (
-        <div className='flex justify-between items-center w-full text-zinc-50 py-4 px-6 bg-gradient-to-r from-[#0B0A1E] from-35% to-[rgb(29,1,56)] to-100% drop-shadow-[0px_4px_4px_0_rgba(0,0,0,0.25)]'>
+        <div className='flex justify-between items-center w-full text-zinc-50 py-4 px-6 bg-gradient-to-r from-darkBlue from-35% to-darkPurple to-100%'>
             <h1 className='text-3xl'>{headingText}</h1>
             <div className='flex gap-16'>
                 <div className='flex gap-4 items-center'>

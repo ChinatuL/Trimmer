@@ -24,7 +24,8 @@
             "@dashboard/*": ["./src/app/ui/dashboard/*"],
             "@public/*": ["./public/*"],
             "@images/*": ["./public/images/*"],
-            "@icons/*" : ["./public/icons/*"]
+            "@icons/*" : ["./public/icons/*"],
+            "@lib/*": ["./src/app/lib/*"],
         }
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

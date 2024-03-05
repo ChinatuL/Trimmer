@@ -13,6 +13,8 @@ const config: Config = {
             },
             colors: {
                 purple: "#9D37ED",
+                darkBlue: "#0B0A1E",
+                darkPurple: "#1d0138",
             },
         },
     },
