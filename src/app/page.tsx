@@ -1,9 +1,11 @@
+import Header from "@ui/header"
+import HomeComponent from "@ui/home/home";
 export default function Home() {
   return (
     <div>
-      <header></header>
+      <Header />
       <main>
-        <h1>Trimmer</h1>
+        <HomeComponent />
       </main>
       <footer></footer>
     </div>

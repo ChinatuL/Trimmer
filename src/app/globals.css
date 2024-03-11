@@ -34,7 +34,7 @@ input:-webkit-autofill:focus {
         top: 1px;
         width: 5px;
         height: 10px;
-        border: solid #9D37ED;
+        border: solid #100e2a;
         border-width: 0 3px 3px 0;
         transform: rotate(45deg);
         opacity: 0;
