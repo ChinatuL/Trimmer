@@ -89,3 +89,45 @@ export const sidenavLinks = [
         activeIcon: profileActive,
     },
 ];
+
+export const pricingPlans = [
+    {
+        id: 1,
+        title: "Starter",
+        price: "Free",
+        description: "Free plan for all users",
+        features: [
+            "Unlimited URL Shortening",
+            "Basic Link Analytics",
+            "Customizable Short Links",
+            "Standard Support",
+            "Ad Supported",
+        ],
+    },
+    {
+        id: 2,
+        title: "Professional",
+        price: "$15/month",
+        description: "Ideal for business creators",
+        features: [
+            "Enhanced Link Analytics",
+            "Custom Branded Domains",
+            "Advanced Link Customization",
+            "Priority Support",
+            "Ad-free Experience",
+        ],
+    },
+    {
+        id: 3,
+        title: "Premium",
+        price: "$25/month",
+        description: "Share with up to 10 users",
+        features: [
+            "Team Collaboration",
+            "User Roles and Permissions",
+            "Enhanced Security",
+            "API Access",
+            "Dedicated Account Manager",
+        ],
+    },
+];
