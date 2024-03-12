@@ -6,6 +6,12 @@ import analyticsIcon from "@icons/analytics.svg";
 import analyticsActive from "@icons/analytics-active.svg";
 import profileIcon from "@icons/profile.svg";
 import profileActive from "@icons/profile-active.svg";
+import imgAlexa from "@images/img-alexa.png";
+import imgAndrew from "@images/img-andrew.png";
+import imgJane from "@images/img-jane.png";
+import imgJordan from "@images/img-jordan.png";
+import imgPeter from "@images/img-peter.png";
+import imgSamuel from "@images/img-samuel.png";
 
 export const links = [
     {
@@ -129,5 +135,57 @@ export const pricingPlans = [
             "API Access",
             "Dedicated Account Manager",
         ],
+    },
+];
+
+export const reviews = [
+    {
+        id: 1,
+        rating: 5,
+        text: '"This platform transformed the way we share links! The ability to customize and track our URLs has been invaluable for our marketing campaigns."',
+        img: imgAndrew,
+        name: "Andrew Mark",
+        position: "Ceo, Marks Media",
+    },
+    {
+        id: 2,
+        rating: 4,
+        text: '"I love the simplicity and effectiveness of this tool. Generating QR codes for my event promotions has never been easier!. Thank you Trimmer."',
+        img: imgJane,
+        name: "Jane Doe",
+        position: "Event Organiser",
+    },
+    {
+        id: 3,
+        rating: 4,
+        text: '"The insights provided by the analytics have helped us understand our audience better and optimize our content strategy accordingly."',
+        img: imgPeter,
+        name: "Peter Slide",
+        position: "Digital Marketer",
+    },
+
+    {
+        id: 4,
+        rating: 5,
+        text: "\"This platform's ability to customize URLs and generate QR codes has elevated our marketing materials. It's an indispensable tool for our digital strategy.\"",
+        img: imgAlexa,
+        name: "Alexa R.",
+        position: "Boutique Owner",
+    },
+    {
+        id: 5,
+        rating: 3,
+        text: '"The analytics feature has been a game changer for our online campaigns. Being able to track the performance of each link e allows us to quickly adjust our strategies and optimize our content."',
+        img: imgJordan,
+        name: "Jordan M.",
+        position: "Digital Marketing Manager",
+    },
+    {
+        id: 6,
+        rating: 5,
+        text: '"I was initially drawn to the platform because it was free to start, but I quickly saw the value in upgrading. The advanced features, have really set my freelance business apart."',
+        img: imgSamuel,
+        name: "Samuel T.",
+        position: "Freelance Photographer",
     },
 ];

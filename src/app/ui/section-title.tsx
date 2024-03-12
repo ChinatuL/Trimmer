@@ -2,7 +2,7 @@ type SectionTitleProps = {
     firstTitle: string;
     highlight?: string;
     secondTitle?: string;
-    description: string;
+    description?: string;
 };
 
 export default function SectionTitle({

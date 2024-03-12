@@ -2,6 +2,7 @@ import Header from "@ui/header";
 import HomeComponent from "@ui/home/home";
 import Features from "@ui/features/features";
 import Pricing from "@ui/pricing/pricing";
+import Reviews from "@ui/reviews/reviews";
 export default function Home() {
     return (
         <div>
@@ -10,6 +11,7 @@ export default function Home() {
                 <HomeComponent />
                 <Features />
                 <Pricing />
+                <Reviews />
             </main>
             <footer></footer>
         </div>

@@ -4,8 +4,8 @@ import { usePathname } from "next/navigation";
 
 type NavlinkProps = {
     name: string;
-  path: string;
-  id: number;
+    path: string;
+    id: number;
 };
 
 export default function Navlink({ name, path, id }: NavlinkProps) {

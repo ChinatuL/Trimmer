@@ -4,11 +4,15 @@ import analytics from "@icons/features-analytics.svg";
 import customUrls from "@icons/features-custom-url.svg";
 import qrcodes from "@icons/features-qrcode.svg";
 import urlShortening from "@icons/features-url-shortening.svg";
-import smallScissor from "@images/small-scissor.png"
+import smallScissor from "@images/small-scissor.png";
 export default function FeaturesGrid() {
     return (
-      <div className='relative grid grid-cols-2 gap-8 mt-8 pb-8 w-[70vw] mx-auto'>
-        <Image src={smallScissor} alt="" className="absolute top-[47%] left-[48%]" />
+        <div className='relative grid grid-cols-2 gap-8 mt-8 pb-8 w-[70vw] mx-auto'>
+            <Image
+                src={smallScissor}
+                alt=''
+                className='absolute top-[47%] left-[48%]'
+            />
             <div className='py-4 [border-width:2px_0px_2px_2px] [border-color:#9D37ED] rounded-xl'>
                 <FeatureCard
                     icon={urlShortening}

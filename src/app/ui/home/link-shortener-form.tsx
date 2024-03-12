@@ -20,7 +20,10 @@ export default function LinkShortenerForm() {
                     placeholder='Enter Your Link Here'
                     className='bg-darkBlue border border-zinc-50 py-3 px-4 placeholder:text-center rounded-lg w-72'
                 />
-                <button type='submit' className='w-32 py-3 border border-purple bg-purple rounded-md transitionEase hover:opacity-70'>
+                <button
+                    type='submit'
+                    className='w-32 py-3 border border-purple bg-purple rounded-md transitionEase hover:opacity-70'
+                >
                     Shorten Link
                 </button>
             </div>
