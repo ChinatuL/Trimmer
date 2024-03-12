@@ -4,6 +4,7 @@ import Features from "@ui/features/features";
 import Pricing from "@ui/pricing/pricing";
 import Reviews from "@ui/reviews/reviews";
 import CallToAction from "@ui/call-to-action";
+import Footer from "@ui/footer/footer";
 export default function Home() {
     return (
         <div>
@@ -15,7 +16,7 @@ export default function Home() {
                 <Reviews />
                 <CallToAction />
             </main>
-            <footer></footer>
+            <Footer />
         </div>
     );
 }

@@ -7,7 +7,7 @@ type LinkBtnProps = {
 
 export default function LinkBtn({ href, text }: LinkBtnProps) {
     return (
-        <Link href={href}>
+        <Link href={href} className="hover:opacity-80 transitionEase">
             <div className='w-28 py-2 bg-purple rounded-md grid place-items-center'>
                 {text}
             </div>

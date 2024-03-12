@@ -10,7 +10,7 @@ export default function Header() {
             <Navlinks />
             <div className='flex gap-8'>
                 <LinkBtn text='Login' href='/login' />
-                <button className='w-28 text-purple border border-purple rounded-md'>
+                <button className='w-28 text-purple border border-purple rounded-md hover:opacity-80 transitionEase'>
                     Try for free
                 </button>
             </div>

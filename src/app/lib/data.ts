@@ -12,6 +12,10 @@ import imgJane from "@images/img-jane.png";
 import imgJordan from "@images/img-jordan.png";
 import imgPeter from "@images/img-peter.png";
 import imgSamuel from "@images/img-samuel.png";
+import twitter from "@icons/twitter-white.svg";
+import linkedIn from "@icons/linkedin-white.svg";
+import instagram from "@icons/instagram.svg";
+import facebook from "@icons/facebook.svg";
 
 export const links = [
     {
@@ -187,5 +191,89 @@ export const reviews = [
         img: imgSamuel,
         name: "Samuel T.",
         position: "Freelance Photographer",
+    },
+];
+
+export const socialLinks = [
+    { id: 1, name: "twitter", icon: twitter, href: "https://twitter.com" },
+    {
+        id: 2,
+        name: "instagram",
+        icon: instagram,
+        href: "https://instagram.com",
+    },
+    { id: 3, name: "linkedIn", icon: linkedIn, href: "https://linkedin.com" },
+    { id: 4, name: "facebook", icon: facebook, href: "https://facebook.com" },
+];
+
+export const footerLinks = [
+    {
+        id: 1,
+        title: "Why Trimmer ?",
+        links: ["Scissor 101", "Integrations & API", "Pricing"],
+    },
+    {
+        id: 2,
+        title: "Solutions",
+        links: [
+            "Social Media",
+            "Digital Marketing",
+            "Customer Service",
+            "For Developers",
+        ],
+    },
+    {
+        id: 3,
+        title: "Products",
+        links: ["Link Management", "QR Codes", "Link-in-bio"],
+    },
+    {
+        id: 4,
+        title: "Company",
+        links: [
+            "About Trimmer",
+            "Careers",
+            "Partners",
+            "Press",
+            "Contact",
+            "Reviews",
+        ],
+    },
+    {
+        id: 5,
+        title: "Resources",
+        links: [
+            "Blog Resource",
+            "Library",
+            "Developers",
+            "App",
+            "Connectors",
+            "Support",
+            "Trust Center",
+            "Browser Extension",
+            "Mobile App",
+        ],
+    },
+    {
+        id: 6,
+        title: "Features",
+        links: [
+            "Branded Links",
+            "Mobile Links",
+            "Campaign Management &",
+            "Analytics",
+            "QR Code generation",
+        ],
+    },
+    {
+        id: 7,
+        title: "Legal",
+        links: [
+            "Privacy Policy",
+            "Cookie Policy",
+            "Terms of Service",
+            "Acceptable Use Policy",
+            "Code of Conduct"
+        ],
     },
 ];
