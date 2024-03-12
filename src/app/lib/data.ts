@@ -1,3 +1,12 @@
+import overviewIcon from "@icons/overview.svg";
+import overviewActive from "@icons/overview-active.svg";
+import linksIcon from "@icons/links.svg";
+import linksActive from "@icons/links-active.svg";
+import analyticsIcon from "@icons/analytics.svg";
+import analyticsActive from "@icons/analytics-active.svg";
+import profileIcon from "@icons/profile.svg";
+import profileActive from "@icons/profile-active.svg";
+
 export const links = [
     {
         id: 1,
@@ -40,5 +49,43 @@ export const links = [
         shortUrl: "https://trimmer.com/z1234",
         date: "2024-01-29",
         clicks: 1,
+    },
+];
+
+export const navbarLinks = [
+    { id: 1, name: "Home", path: "/" },
+    { id: 2, name: "Features", path: "/#features" },
+    { id: 3, name: "Pricing", path: "/#pricing" },
+    { id: 4, name: "FAQ", path: "/#faq" },
+];
+
+export const sidenavLinks = [
+    {
+        id: 1,
+        name: "Overview",
+        icon: overviewIcon,
+        href: "/dashboard",
+        activeIcon: overviewActive,
+    },
+    {
+        id: 2,
+        name: "Links",
+        icon: linksIcon,
+        href: "/dashboard/links",
+        activeIcon: linksActive,
+    },
+    {
+        id: 3,
+        name: "Analytics",
+        icon: analyticsIcon,
+        href: "/dashboard/analytics",
+        activeIcon: analyticsActive,
+    },
+    {
+        id: 4,
+        name: "Profile",
+        icon: profileIcon,
+        href: "/dashboard/profile",
+        activeIcon: profileActive,
     },
 ];
