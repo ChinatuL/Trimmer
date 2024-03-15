@@ -17,7 +17,7 @@ export default function Register() {
     return (
         <div className='flex justify-center items-center w-full h-full lg:w-[80%] max-w-[66rem] mx-auto font-normal lg:min-h-[95vh]'>
             <div className='hidden lg:block lg:w-[50%] lg:h-full lg:relative'>
-                <Image src={registerBg} alt='' fill />
+                <Image src={registerBg} alt='' sizes="100%" fill priority/>
             </div>
             <div className='lg:w-[50%] h-full bg-[#0B0A1E] px-8 py-10 md:px-14 text-zinc-50 rounded-r-lg'>
                 <FormTitle
