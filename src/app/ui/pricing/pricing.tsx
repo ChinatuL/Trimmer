@@ -5,17 +5,19 @@ import PricingCard from "./pricing-card";
 export default function Pricing() {
     return (
         <section
-            className='min-h-[100vh] w-full bg-pricing-bg bg-no-repeat bg-cover text-zinc-50 pt-8'
+            className='flex justify-center items-center min-h-[100vh] bg-pricing-bg bg-no-repeat bg-cover text-zinc-50 py-8'
             id='pricing'
         >
-            <SectionTitle
-                firstTitle='Experience transparent pricing'
-                description="Whether you're a solo content creator, a growing startup, or a large enterprise, we have the perfect plan for you."
-            />
-            <div className='grid grid-cols-3 gap-4 max-w-[85vw] mx-auto'>
-                {pricingPlans.map((plan) => {
-                    return <PricingCard key={plan.id} {...plan} />;
-                })}
+            <div className='w-[85vw] lg:w-[90vw] max-w-[1000px]'>
+                <SectionTitle
+                    firstTitle='Experience transparent pricing'
+                    description="Whether you're a solo content creator, a growing startup, or a large enterprise, we have the perfect plan for you."
+                />
+                <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 w-full mx-auto py-8'>
+                    {pricingPlans.map((plan) => {
+                        return <PricingCard key={plan.id} {...plan} />;
+                    })}
+                </div>
             </div>
         </section>
     );

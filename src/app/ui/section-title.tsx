@@ -13,7 +13,7 @@ export default function SectionTitle({
 }: SectionTitleProps) {
     return (
         <div className='flex flex-col items-center text-center gap-1 font-semibold'>
-            <h2 className='text-3xl leading-10'>
+            <h2 className='text-2xl md:text-3xl leading-10'>
                 {firstTitle}{" "}
                 {highlight ? (
                     <span className='text-purple'>{highlight}</span>
@@ -22,7 +22,7 @@ export default function SectionTitle({
                 )}{" "}
                 {secondTitle}
             </h2>
-            <p className='text-lg max-w-[70ch]'>{description}</p>
+            <p className='md:text-lg max-w-[70ch]'>{description}</p>
         </div>
     );
 }

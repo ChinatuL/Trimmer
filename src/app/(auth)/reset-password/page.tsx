@@ -12,11 +12,11 @@ export default function Register() {
     }
 
     return (
-        <div className='flex justify-center items-center w-[80%] max-w-[66rem] mx-auto font-normal min-h-[95vh]'>
-            <div className=' w-[50%] h-full relative'>
+        <div className='flex justify-center items-center w-full h-full lg:w-[80%] max-w-[66rem] mx-auto font-normal lg:min-h-[95vh]'>
+            <div className='hidden lg:block lg:w-[50%] lg:h-full lg:relative'>
                 <Image src={forgotPasswordBg} alt='' fill />
             </div>
-            <div className=' w-[50%] h-full bg-[#0B0A1E] py-10 px-14 text-zinc-50 rounded-r-lg'>
+            <div className='lg:w-[50%] h-full bg-[#0B0A1E] px-8 py-10 md:px-14 text-zinc-50 rounded-r-lg'>
                 <FormTitle
                     title='Reset Password'
                     desc='Enter your new password below'

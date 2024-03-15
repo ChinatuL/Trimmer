@@ -13,8 +13,10 @@ export default function FeatureCard({
     return (
         <div className='flex flex-col gap-2 items-center text-center'>
             <Image src={icon} alt='' className='pb-4' />
-            <h3 className='text-2xl font-semibold'>{title}</h3>
-            <p className='leading-6 w-[32ch]'>{description}</p>
+            <h3 className='text-xl font-semibold'>{title}</h3>
+            <p className='leading-6 w-full md:w-[40ch] lg:w-[32ch]'>
+                {description}
+            </p>
         </div>
     );
 }

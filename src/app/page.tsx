@@ -1,4 +1,4 @@
-import Header from "@ui/header";
+import Header from "@ui/header/header";
 import HomeComponent from "@ui/home/home";
 import Features from "@ui/features/features";
 import Pricing from "@ui/pricing/pricing";
@@ -7,7 +7,7 @@ import CallToAction from "@ui/call-to-action";
 import Footer from "@ui/footer/footer";
 export default function Home() {
     return (
-        <div>
+        <div className='w-full'>
             <Header />
             <main>
                 <HomeComponent />

@@ -1,7 +1,7 @@
 import { footerLinks } from "@lib/data";
 export default function FooterLinks() {
     return (
-        <div className="grid grid-cols-4 gap-x-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {footerLinks.map((link) => {
                 const { id, title, links } = link;
                 return (
