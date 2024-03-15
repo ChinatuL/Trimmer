@@ -43,8 +43,7 @@ export default function Register() {
                 setIsPending(false);
             }
         } catch (error) {
-            console.log("Error during registration:", error);
-            throw new Error("An error occurred");
+          console.log("Error during registration:", error);
         }
     }
 
