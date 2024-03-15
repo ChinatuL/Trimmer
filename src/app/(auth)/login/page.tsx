@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { useState } from "react";
 import Link from "next/link";
 import FormTitle from "@auth/form-title";
 import AuthForm from "@auth/form";
@@ -8,8 +9,10 @@ import SubmitButton from "@auth/submit-button";
 import GoogleButton from "@auth/google-button";
 import registerBg from "@images/bg-register.png";
 import googleIcon from "@icons/google.svg";
+import ButtonSpinner from "@ui/button-spinner";
 
-export default function Register() {
+export default function Page() {
+    const [isPending, setIsPending] = useState(false);
     function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
     }
@@ -17,7 +20,7 @@ export default function Register() {
     return (
         <div className='flex justify-center items-center w-full h-full lg:w-[80%] max-w-[66rem] mx-auto font-normal lg:min-h-[95vh]'>
             <div className='hidden lg:block lg:w-[50%] lg:h-full lg:relative'>
-                <Image src={registerBg} alt='' sizes="100%" fill priority/>
+                <Image src={registerBg} alt='' sizes='100%' fill priority />
             </div>
             <div className='lg:w-[50%] h-full bg-[#0B0A1E] px-8 py-10 md:px-14 text-zinc-50 rounded-r-lg'>
                 <FormTitle
@@ -61,7 +64,9 @@ export default function Register() {
                         </Link>
                     </div>
                     <div className='grid gap-4 text-center pt-4'>
-                        <SubmitButton text='Sign Up' />
+                        <SubmitButton>
+                            {isPending ? <ButtonSpinner /> : "Sign In"}
+                        </SubmitButton>
                         <GoogleButton>
                             <span>
                                 <Image src={googleIcon} alt='' />

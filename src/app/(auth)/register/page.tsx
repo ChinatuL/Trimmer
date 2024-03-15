@@ -13,7 +13,7 @@ import registerBg from "@images/bg-register.png";
 import googleIcon from "@icons/google.svg";
 import ButtonSpinner from "@ui/button-spinner";
 
-export default function Register() {
+export default function Page() {
     const router = useRouter();
     const [error, setError] = useState("");
     const [isPending, setIsPending] = useState(false);
