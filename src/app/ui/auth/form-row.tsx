@@ -42,7 +42,7 @@ export default function FormRow({
                 className='bg-[#0B0A1E] border border-zinc-50 rounded-xl w-full px-4 py-3 placeholder:text-sm placeholder:text-zinc-500 hover:border-purple focus:outline focus:outline-purple outline-offset-2 focus:border-zinc-500  transition duration-300 ease-in-out'
             />
             {type === "password" && (
-                <button
+                <button type="button"
                     className='absolute right-3 top-3'
                     onClick={handlePasswordReveal}
                 >

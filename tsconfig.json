@@ -26,6 +26,7 @@
             "@images/*": ["./public/images/*"],
             "@icons/*" : ["./public/icons/*"],
             "@lib/*": ["./src/app/lib/*"],
+            "@firebase/*": ["./src/app/lib/firebase/*"],
         }
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
